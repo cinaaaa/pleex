@@ -1,2 +1,2 @@
 # squeezy-db
-💽 Schematic async storage for React applications
+💽 Schematic async database for React applications
