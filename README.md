@@ -1,3 +1,5 @@
 # Pleex
 <br />
-<img src="https://imgur.com/download/47wFuu8" width="250" />
+Pleex is in development status currently
+<a href="https://pleex.gitbook.io/docs">Pleex documentation</a>
+<img src="https://i.ibb.co/LP4kSq3/sign.png" width="250" />
