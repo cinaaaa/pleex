@@ -1,5 +1,4 @@
 import {options} from './src';
-<<<<<<< HEAD
 import {schema} from './src/schema/schema';
 
 export const Pleex = {
@@ -22,17 +21,3 @@ export const Pleex = {
         };
     },
 };
-=======
-
-export const Pleex = {
-    collection: function (collection: string) { 
-        if (collection) {
-            return options;
-        }
-        else {
-            /* When collection name not included */
-            throw new Error('Collection name is an required');
-        };
-    },
-};
->>>>>>> 60c004b057d25f76e3100355f28651a5d6054d07
