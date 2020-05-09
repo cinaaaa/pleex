@@ -8,7 +8,7 @@ export const toCollection = (collection: string, input: object, success: (arg0: 
     
     getCollection(collection, async (data) => {
         try {
-            
+
             // Now we have collection
             // Write new items to it
             await AsyncStorage.setItem(collection, JSON.stringify([...data, input]));

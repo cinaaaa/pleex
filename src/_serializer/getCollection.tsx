@@ -10,7 +10,6 @@ export const getCollection = async (collection: string, success: (arg0: any) => 
         let data = await AsyncStorage.getItem(collection);
 
         if (data != null) {/* Data exist, return parsed of data */ success(JSON.parse(data));}
-
         else {
             await AsyncStorage.setItem(collection, "[]");
             success([]);
