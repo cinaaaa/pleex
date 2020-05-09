@@ -4,7 +4,7 @@ import {schema} from './src/schema/schema';
 export const Pleex = {
     collection: function (collection: string /* Collection name */) { 
         if (typeof collection === 'string') {
-            return options;
+            return options(collection);
         }
         else {
             /* When collection name not included or invalid */
