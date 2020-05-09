@@ -16,7 +16,6 @@ export const insert = async (collection: string, data: object, schema: object, c
     Object.keys(data).sort().every(function(value, index) { 
         if (value !== Object.keys(schema).sort()[index]) { throw new Error('Data included is not same as schema') };
     });
-    
 
     /* Check types of values compare to schema */
     Object.keys(data).forEach((key) => {
