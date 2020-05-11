@@ -14,7 +14,7 @@ it('Test Get All', done => {
     my_collection.insert(
         {test: 'test'},
         my_schema,
-        (success) => {
+        () => {
             done();
         },
         (error) => {
