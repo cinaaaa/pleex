@@ -1,5 +1,5 @@
 /**
- * Insert function, use this to add data to your collection
+ * getAll function, use this to get all data from your collection
  */
 import {getCollection} from '../_serializer/getCollection';
 
