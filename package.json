@@ -4,13 +4,10 @@
   "description": " Schematic storage for react native",
   "main": "index.tsx",
   "scripts": {
-    "test": "jest"
+    "test": "jest --silent"
   },
   "jest": {
-    "preset": "react-native",
-    "setupFiles": [
-      "./jest-setup.js"
-    ]
+    "preset": "react-native"
   },
   "repository": {
     "type": "git",
