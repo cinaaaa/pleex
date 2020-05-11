@@ -12,4 +12,4 @@ install:
   - yarn global add jest
   - yarn
 script:
-  - jest
+  - jest --silent
