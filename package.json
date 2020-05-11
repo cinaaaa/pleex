@@ -7,7 +7,10 @@
     "test": "jest"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "setupFiles": [
+      "./jest-setup.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -47,5 +50,6 @@
     "react": "^16.13.1",
     "react-native": "^0.62.2",
     "typescript": "^3.8.3"
-  }
+  },
+  "dependencies": {}
 }
