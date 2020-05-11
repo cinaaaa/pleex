@@ -4,7 +4,7 @@
   "description": " Schematic storage for react native",
   "main": "index.tsx",
   "scripts": {
-    "test": "jest"
+    "test": "jest --silent"
   },
   "jest": {
     "preset": "react-native",
