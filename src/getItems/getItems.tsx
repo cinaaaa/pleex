@@ -3,7 +3,7 @@
  */
 import {getCollection} from '../_serializer/getCollection';
 
-export const getAllItems = (collection: string, search: object, success: (arg0: any) => void, failure: (arg0: any) => void) => {
+export const getItems = (collection: string, search: object, success: (arg0: any) => void, failure: (arg0: any) => void) => {
 
     /* Check search param */
     if (typeof search !== 'object' || search === null) {
