@@ -13,4 +13,4 @@
 </p>
 
 <br />
-<h1>Pleex is not completed yet : (</h1>
+<h1 align="center">Pleex is not completed yet : (</h1>
