@@ -13,6 +13,4 @@
 </p>
 
 <br />
-
-## Get Started
-<h1>Pleex is not completed yet : (</a>
+<h1>Pleex is not completed yet : (</h1>
