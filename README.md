@@ -1,7 +1,3 @@
-# Pleex
-<br />
-<a href="https://pleex.gitbook.io/docs">Pleex documentation</a>
-
 <p align="center">
   <a href="https://react-native-elements.github.io/react-native-elements/">
     <img alt="pleex" src="https://i.ibb.co/LP4kSq3/sign.png" width="300">
@@ -19,7 +15,7 @@
 <br />
 
 ## Get Started
-see documentation
+<h1>Pleex is not completed yet : (</a>
 ### Installation
 npm
 
