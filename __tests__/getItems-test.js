@@ -1,12 +1,12 @@
 import {Pleex} from '../index';
 jest.useFakeTimers();
 
-it('Test Get All Item', done => {
+it('Test Get All Items', done => {
 
     // Create collection first
     let my_collection = Pleex.collection('test');
 
-    my_collection.getAllItems(
+    my_collection.getItems(
         {test: 'test'},
         (data) => {
             if (typeof data === "object") {
