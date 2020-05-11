@@ -1,3 +1,15 @@
 language: node_js
 node_js:
-  - 7
+  - 'stable'
+cache:
+  yarn: true
+  directories:
+    - node_modules
+branches:
+  only:
+    - master
+install:
+  - yarn global add jest
+  - yarn
+script:
+  - jest
