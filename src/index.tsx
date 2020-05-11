@@ -1,6 +1,7 @@
 import {insert} from './insert/insert';
 import {getAll} from './getAll/getAll';
 import {getItem} from './getItem/getItem';
+import {getAllItems} from './getAllItems/getAllItems';
 
 export const options = (collection: string) => {
     return {
@@ -12,6 +13,9 @@ export const options = (collection: string) => {
         },
         getItem: function (search: object, success: (arg0: any) => void, failure: (arg0: any) => void) {
             return getItem(collection, search, (data) => success(data), (error) => failure(error));
+        },
+        getAllItems: function (search: object, success: (arg0: any) => void, failure: (arg0: any) => void) {
+            return getAllItems(collection, search, (data) => success(data), (error) => failure(error));
         },
     }
 };
