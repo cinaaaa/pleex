@@ -18,7 +18,7 @@ it('Test Get All', done => {
             done();
         },
         (error) => {
-            console.error(error);
+            console.error(error)
         },
     );
 
