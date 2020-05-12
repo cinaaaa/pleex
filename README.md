@@ -5,9 +5,9 @@
   </a>
 </p>
 
-<h2 align="center">
+<h3 align="center">
   ⚙️💣 " Schematic " ➕ " Storage " 💣⚙️ for react native
-</h2>
+</h3>
 
 <p align="center">
   <img src="https://travis-ci.com/E-RROR/pleex.svg?branch=master"/>
