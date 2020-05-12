@@ -1,6 +1,6 @@
 # Contribute.md
 
-Thanks for your interest in React Tagify. We welcome all forms of contribution - from issue reports, to Adding Features.
+Thanks for your interest in Pleex. We welcome all forms of contribution - from issue reports, to Adding Features.
 
 ## Team members
 
@@ -23,7 +23,7 @@ This sections explains how bug triaging is done for your project. Help beginners
 
 # Documentation
 
-* Help us with documentation here: Coming Soon
+* Help us with documentation here: https://pleex.gitbook.io/docs/
 
 # Community
 
@@ -31,3 +31,6 @@ This sections explains how bug triaging is done for your project. Help beginners
 * Create your own real world example project.
 * Write about other people's projects based on this project. Show how
 it's used in daily life. Take screenshots and make videos!
+
+# New developer
+see how to contribure: https://pleex.gitbook.io/docs/contributing/how-to-contribute
