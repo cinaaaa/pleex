@@ -16,4 +16,4 @@
 
 <br />
 <h1 align="center">Pleex is not completed yet : (</h1>
-<h2 align="center">[####################       ] 60% Done</h2>
+<h2 align="center">[#################### ] 70% Done</h2>
