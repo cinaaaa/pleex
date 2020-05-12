@@ -18,5 +18,66 @@
   <img src="https://img.shields.io/badge/test-jest-yellow" />
 </p>
 
-<h3 align="center">Build with ❤</h3>
+<h3 align="center">Built with ❤</h3>
 <br />
+
+## Get Started
+
+### Installation
+
+install pleex with npm or yarn
+```bash
+npm i pleex
+```
+or
+```bash
+yarn add pleex
+```
+also pleex don't need any extra configuration or installation with gradle or pods
+
+### Example Usage
+
+Full example and list of api's can be find in [pleex documents](https://pleex.gitbook.com/docs)
+<br />
+this is example of creating schemas with pleex
+```jsx
+import React,{useEffect} from 'react';
+import {Text} from 'react-native';
+import {Pleex} from 'pleex';
+
+const App = () => {
+
+  const my_schema = Pleex.schema({
+    name: String,
+    age: Number,
+    logged: Boolean,
+  });
+
+  return (
+    <>
+      <Text>Try Schemas</Text>
+    </>
+  );
+
+};
+
+export default App;
+```
+
+### Tests
+you can test source code by
+```bash
+npm test
+```
+
+### This package helps you in:
+- #### Having simple storage
+- #### Create Schema and use them
+- #### Type cheking for schemas
+- #### Async workflow
+- #### Integrated with async storage
+- #### Save and use Json objects
+- #### Built in searching api 
+
+### 🙋‍♂️ Contributing
+Find issues or want to add features? see contributing (guide)[https://pleex.gitbook.io/docs/contributing/how-to-contribute]
