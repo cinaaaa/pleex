@@ -15,4 +15,5 @@
   <img src="https://img.shields.io/github/license/E-RROR/pleex" />
 </p>
 
+<h3 align="center">Build with ❤</h3>
 <br />
