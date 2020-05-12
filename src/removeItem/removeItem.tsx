@@ -22,22 +22,21 @@ export const removeItem = (collection: string, remove: object, success: (arg0: a
                 // now we can get all objects
                 getCollection(collection, 
                     (allObjects) => {
-                        let filtered_list: object;
-                        // filter
-                        filtered_list = allObjects.filter((item: object) =>  JSON.stringify(finded) !== JSON.stringify(item));
-
+                        let filtered_list: object = allObjects.filter((item: object) =>  JSON.stringify(finded) !== JSON.stringify(item));
                         // Now save new collection objects
-                        toCollection(
-                            collection,
-                            filtered_list,
-                            () => {
-                                success(true);
-                            },
-                            (error) => {
-                                failure(error);
-                            },
-                            true
-                        );
+                        if (filtered_list) {
+                            toCollection(
+                                collection,
+                                filtered_list,
+                                () => {
+                                    success(true);
+                                },
+                                (error) => {
+                                    failure(error);
+                                },
+                                true
+                            );
+                        };
                     }, 
                     (error) => {failure(error)}
                 );

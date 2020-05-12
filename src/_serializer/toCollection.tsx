@@ -11,7 +11,6 @@ export const toCollection = (collection: string, input: object, success: (arg0: 
 
             // Now we have collection
             // Write new items to it
-
             if (clear) {
                 await AsyncStorage.setItem(collection, JSON.stringify([input]));
                 success(true);

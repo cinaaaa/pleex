@@ -2,6 +2,7 @@ import {insert} from './insert/insert';
 import {getAll} from './getAll/getAll';
 import {getItem} from './getItem/getItem';
 import {getItems} from './getItems/getItems';
+import {removeItem} from './removeItem/removeItem';
 
 export const options = (collection: string) => {
     return {
@@ -16,6 +17,9 @@ export const options = (collection: string) => {
         },
         getItems: function (search: object, success: (arg0: any) => void, failure: (arg0: any) => void) {
             return getItems(collection, search, (data) => success(data), (error) => failure(error));
+        },
+        removeItem: function (remove: object, success: (arg0: any) => void, failure: (arg0: any) => void) {
+            return removeItem(collection, remove, (data) => success(data), (error) => failure(error));
         },
     }
 };
