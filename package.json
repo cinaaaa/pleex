@@ -1,7 +1,7 @@
 {
   "name": "pleex",
   "version": "0.0.1",
-  "description": " Schematic storage for react native",
+  "description": "Schematic storage for react native",
   "main": "index.tsx",
   "scripts": {
     "test": "jest --silent"
@@ -14,26 +14,19 @@
     "url": "git+https://github.com/E-RROR/pleex.git"
   },
   "keywords": [
-    "React",
-    "native",
-    "react",
-    "native",
-    "storage",
-    "async",
-    "storage",
-    "react",
-    "native",
-    "schematic",
-    "storage",
-    "schematic",
-    "wrapper"
+    "react native",
+    "async storage",
+    "pleex",
+    "schematic storage",
+    "schema",
+    "react native async storage"
   ],
-  "author": "Sina Farhadi",
+  "author": "Sina Farhadi <sina.farhadi.cyber@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/E-RROR/pleex/issues"
   },
-  "homepage": "https://github.com/E-RROR/pleex#readme",
+  "homepage": "https://pleex.gitbook.io/docs",
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.9.6",
     "@babel/preset-typescript": "^7.9.0",
