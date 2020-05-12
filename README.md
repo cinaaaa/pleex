@@ -10,9 +10,10 @@
 
 <p align="center">
   <img src="https://travis-ci.com/E-RROR/pleex.svg?branch=master"/>
+  <img src="https://img.shields.io/badge/with%20%E2%9D%A4-yes-brightgreen" />
+  <img src="https://img.shields.io/badge/completed-no%20:(-red" />
 </p>
 
 <br />
-
-## Get Started
-<h1>Pleex is not completed yet : (</a>
+<h1 align="center">Pleex is not completed yet : (</h1>
+<h2 align="center">[####################       ] 60% Done</h2>
