@@ -8,7 +8,7 @@
 <h3 align="center">
   ⚙️💣 " Schematic " ➕ " Storage " 💣⚙️ for react native
 </h3>
-<hr />
+<br />
 <p align="center">
   <img src="https://travis-ci.com/E-RROR/pleex.svg?branch=master"/>
   <img src="https://img.shields.io/badge/with%20%E2%9D%A4-yes-brightgreen" />
