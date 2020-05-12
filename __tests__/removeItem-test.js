@@ -11,7 +11,7 @@ it('Test remove Item', done => {
         () => {
             console.error('Error in remove');
         },
-        (error) => {
+        () => {
             // correct because no object exists with that keys
             done();
         },
