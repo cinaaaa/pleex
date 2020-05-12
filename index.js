@@ -1,0 +1,1 @@
+export {Pleex} from './src/index';

@@ -3,6 +3,7 @@ import {getAll} from './getAll/getAll';
 import {getItem} from './getItem/getItem';
 import {getItems} from './getItems/getItems';
 import {removeItem} from './removeItem/removeItem';
+import {schema} from './schema/schema';
 
 export const options = (collection: string) => {
     return {
@@ -22,4 +23,25 @@ export const options = (collection: string) => {
             return removeItem(collection, remove, (data) => success(data), (error) => failure(error));
         },
     }
+};
+
+export const Pleex = {
+    collection: function (collection: string /* Collection name */) { 
+        if (typeof collection === 'string') {
+            return options(collection);
+        }
+        else {
+            /* When collection name not included or invalid */
+            throw new Error(`Collection name type must be object but now is ${typeof collection}`);
+        };
+    },
+    schema: function (schemaObj: object /* Schema object */) {
+        if (typeof schemaObj === 'object') {
+            return schema(schemaObj);
+        }
+        else {
+            /* Schema is not valid object name not included */
+            throw new Error(`Schema type must be object but now is ${typeof schemaObj}`);
+        };
+    },
 };
