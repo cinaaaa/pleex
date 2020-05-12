@@ -2,7 +2,7 @@
   "name": "pleex",
   "version": "0.0.2",
   "description": "Schematic storage for react native",
-  "main": "index.tsx",
+  "main": "index.js",
   "scripts": {
     "test": "jest --silent"
   },
