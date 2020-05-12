@@ -1,6 +1,6 @@
 {
   "name": "pleex",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Schematic storage for react native",
   "main": "index.js",
   "scripts": {

@@ -27,7 +27,7 @@ export const options = (collection: string) => {
 
 export const Pleex = {
     collection: function (collection: string /* Collection name */) { 
-        if (typeof collection === 'string') {
+        if (typeof collection === 'string' && collection !== null) {
             return options(collection);
         }
         else {
@@ -36,7 +36,7 @@ export const Pleex = {
         };
     },
     schema: function (schemaObj: object /* Schema object */) {
-        if (typeof schemaObj === 'object') {
+        if (typeof schemaObj === 'object' && schemaObj !== null) {
             return schema(schemaObj);
         }
         else {

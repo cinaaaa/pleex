@@ -1,1 +1,1 @@
-export {Pleex} from './src/index';
+export {Pleex} from './src';

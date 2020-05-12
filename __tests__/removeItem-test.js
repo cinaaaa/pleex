@@ -1,4 +1,4 @@
-import {Pleex} from '../index';
+import {Pleex} from '../src/index';
 jest.useFakeTimers();
 
 it('Test remove Item', done => {
