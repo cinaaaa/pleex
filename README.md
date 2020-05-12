@@ -16,6 +16,7 @@
   <img src="https://img.shields.io/github/package-json/v/E-RROR/pleex?color=blue" />
   <img src="https://img.shields.io/badge/document-yes-lightgreen" />
   <img src="https://img.shields.io/badge/test-jest-yellow" />
+  <img src="https://img.shields.io/npm/v/pleex" />
 </p>
 
 <h3 align="center">Built with ❤</h3>
