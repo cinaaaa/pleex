@@ -1,8 +1,8 @@
 {
   "name": "pleex",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Schematic storage for react native",
-  "main": "index.tsx",
+  "main": "index.js",
   "scripts": {
     "test": "jest --silent"
   },
@@ -28,18 +28,11 @@
   },
   "homepage": "https://pleex.gitbook.io/docs",
   "devDependencies": {
-    "@babel/plugin-transform-runtime": "^7.9.6",
-    "@babel/preset-typescript": "^7.9.0",
-    "@types/jest": "^25.2.1",
-    "@types/react": "^16.9.34",
-    "@types/react-native": "^0.62.7",
-    "@types/react-test-renderer": "^16.9.2",
     "babel-jest": "^26.0.1",
     "babel-plugin-module-resolver": "^4.0.0",
     "metro-react-native-babel-preset": "^0.59.0",
     "react": "^16.13.1",
-    "react-native": "^0.62.2",
-    "typescript": "^3.8.3"
+    "react-native": "^0.62.2"
   },
   "dependencies": {}
 }
