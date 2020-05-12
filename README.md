@@ -37,31 +37,28 @@ also pleex don't need any extra configuration or installation with gradle or pod
 
 ### Example Usage
 
-Full example and list of api's can be find in [pleex documents](https://pleex.gitbook.com/docs)
+Full example and list of api's can be find in [pleex documents](https://pleex.gitbook.io/docs)
 <br />
 this is example of creating schemas with pleex
 ```jsx
-import React,{useEffect} from 'react';
-import {Text} from 'react-native';
 import {Pleex} from 'pleex';
 
-const App = () => {
+const my_collection = Pleex.collection('test');
 
-  const my_schema = Pleex.schema({
-    name: String,
-    age: Number,
-    logged: Boolean,
-  });
+const my_schema = Pleex.schema({
+  name: String,
+  age: Number,
+});
 
-  return (
-    <>
-      <Text>Try Schemas</Text>
-    </>
-  );
-
-};
-
-export default App;
+my_collection.insert(
+    {
+      name: 'Jack',
+      age: 12,
+    },
+    my_schema,
+    (success) => // Success,
+    (error) => console.error(error)
+);
 ```
 
 ### Tests
@@ -80,4 +77,4 @@ npm test
 - #### Built in searching api 
 
 ### 🙋‍♂️ Contributing
-Find issues or want to add features? see contributing (guide)[https://pleex.gitbook.io/docs/contributing/how-to-contribute]
+Find issues or want to add features? see contributing [guide](https://pleex.gitbook.io/docs/contributing/how-to-contribute)
