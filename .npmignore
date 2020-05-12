@@ -6,3 +6,9 @@ node_modules
 
 # Runtime data
 tmp
+.jest
+
+# Github
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+SECURITY.md
