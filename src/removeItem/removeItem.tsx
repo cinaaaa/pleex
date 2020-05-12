@@ -1,5 +1,5 @@
 /**
- * removeItem function, use this to get find data and remote it from your collection
+ * removeItem function, use this to find data and remove it from your collection
  */
 import {getCollection} from '../_serializer/getCollection';
 import {toCollection} from '../_serializer/toCollection';
