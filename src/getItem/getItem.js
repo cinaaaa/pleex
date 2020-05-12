@@ -1,9 +1,9 @@
 /**
- * getAllItem function, use this to array of finded items
+ * getItem function, use this to get find data from your collection
  */
 import {getCollection} from '../_serializer/getCollection';
 
-export const getItems = (collection: string, search: object, success: (arg0: any) => void, failure: (arg0: any) => void) => {
+export const getItem = (collection, search, success, failure) => {
 
     /* Check search param */
     if (typeof search !== 'object' || search === null) {
@@ -14,10 +14,10 @@ export const getItems = (collection: string, search: object, success: (arg0: any
     getCollection(
         collection,
         (data) => {
-            // finded object pushed to this
-            let find: Array<object> = [];
+            // finded object point to this
+            let find;
 
-            data.forEach((element: object) => {
+            data.forEach((element) => {
                 // each time same key found we plus this
                 let its_same = 0;
                 Object.keys(search).forEach((key) => {
@@ -26,8 +26,7 @@ export const getItems = (collection: string, search: object, success: (arg0: any
                             its_same += 1;
                             if (Object.keys(search).length === its_same) {
                                 // Find : D
-                                find.push(element);
-                                its_same = 0;
+                                find = element;
                                 return;
                             };
                         }

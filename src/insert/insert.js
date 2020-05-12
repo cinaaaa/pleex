@@ -3,7 +3,7 @@
  */
 import {toCollection} from '../_serializer/toCollection';
 
-export const insert = async (collection: string, data: object, schema: object, success: (arg0: any) => void, failure: (arg0: any) => void) => {
+export const insert = async (collection, data, schema, success, failure) => {
 
     /* Check type of the inputs and schema */
     if (typeof data !== 'object' || data === null) { throw new Error(`Imported data should be object not ${typeof data}`); };

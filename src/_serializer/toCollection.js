@@ -4,7 +4,7 @@
 import {AsyncStorage} from 'react-native';
 import {getCollection} from './getCollection';
 
-export const toCollection = (collection: string, input: object, success: (arg0: any) => void, failure: (arg0: any) => void, clear?: boolean) => {
+export const toCollection = (collection, input, success, failure, clear) => {
     
     getCollection(collection, async (data) => {
         try {

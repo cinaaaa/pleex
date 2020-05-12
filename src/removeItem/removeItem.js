@@ -5,7 +5,7 @@ import {getCollection} from '../_serializer/getCollection';
 import {toCollection} from '../_serializer/toCollection';
 import {getItem} from '../getItem/getItem';
 
-export const removeItem = (collection: string, remove: object, success: (arg0: any) => void, failure: (arg0: any) => void) => {
+export const removeItem = (collection, remove, success, failure) => {
 
     /* Check search param */
     if (typeof remove !== 'object' || remove === null) {
@@ -22,7 +22,7 @@ export const removeItem = (collection: string, remove: object, success: (arg0: a
                 // now we can get all objects
                 getCollection(collection, 
                     (allObjects) => {
-                        let filtered_list: object = allObjects.filter((item: object) =>  JSON.stringify(finded) !== JSON.stringify(item));
+                        let filtered_list = allObjects.filter((item) =>  JSON.stringify(finded) !== JSON.stringify(item));
                         // Now save new collection objects
                         if (filtered_list) {
                             toCollection(

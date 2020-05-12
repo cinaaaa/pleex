@@ -3,7 +3,7 @@
  */
 import {getCollection} from '../_serializer/getCollection';
 
-export const getAll = (collection: string, success: (arg0: any) => void, failure: (arg0: any) => void) => {
+export const getAll = (collection, success, failure) => {
 
     /* Call getCollection function */
     getCollection(collection, (data /**Success */) => success(data), (error) => failure(error));

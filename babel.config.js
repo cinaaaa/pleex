@@ -5,7 +5,7 @@ module.exports = {
   "plugins": [
     ["module-resolver", {
       "root": ["./src"],
-      "extensions": [".js", ".ts", ".tsx", ".ios.js", ".android.js"]
+      "extensions": [".js"]
     }],
     "@babel/plugin-transform-runtime",
   ],

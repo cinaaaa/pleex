@@ -1,4 +1,4 @@
-import {Pleex} from '../src/index';
+import {Pleex} from '../index';
 
 it('collection test', () => {
     let my_collection = Pleex.collection('test');

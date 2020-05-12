@@ -1,4 +1,4 @@
-import {Pleex} from '../src/index';
+import {Pleex} from '../index';
 
 it('schema test', () => {
     const my_schema = Pleex.schema({

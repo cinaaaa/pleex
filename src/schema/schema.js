@@ -2,9 +2,9 @@
  * Schema, use this to create schemas
  */
 
-export const schema = (schema: object) => {
+export const schema = (schema) => {
 
-    let generatedSchema: object = {};
+    let generatedSchema = {};
 
     // Loop key values to choose types
     Object.keys(schema).forEach((key) => {
