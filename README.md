@@ -13,6 +13,9 @@
   <img src="https://travis-ci.com/E-RROR/pleex.svg?branch=master"/>
   <img src="https://img.shields.io/badge/with%20%E2%9D%A4-yes-brightgreen" />
   <img src="https://img.shields.io/github/license/E-RROR/pleex" />
+  <img src="https://img.shields.io/github/package-json/v/E-RROR/pleex?color=blue" />
+  <img src="https://img.shields.io/badge/document-yes-lightgreen" />
+  <img src="https://img.shields.io/badge/test-jest-yellow" />
 </p>
 
 <h3 align="center">Build with ❤</h3>
