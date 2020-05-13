@@ -4,6 +4,7 @@ import {getItem} from './src/getItem/getItem';
 import {getItems} from './src/getItems/getItems';
 import {removeItem} from './src/removeItem/removeItem';
 import {schema} from './src/schema/schema';
+import {clearCollection} from './src/clearCollection/clearCollection';
 
 export const options = (collection) => {
     return {
@@ -21,6 +22,9 @@ export const options = (collection) => {
         },
         removeItem: function (remove, success, failure) {
             return removeItem(collection, remove, (data) => success(data), (error) => failure(error));
+        },
+        clearCollection: function (success, failure) {
+            return clearCollection(collection, () => success(data), (error) => failure(error));
         },
     }
 };
