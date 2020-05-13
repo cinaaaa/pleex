@@ -4,10 +4,6 @@
 import {toCollection} from '../_serializer/toCollection';
 
 export const insert = async (collection, data, schema, success, failure) => {
-
-    /* Check type of the inputs and schema */
-    if (typeof data !== 'object' || data === null) { throw new Error(`Imported data should be object not ${typeof data}`); };
-    if (typeof schema !== 'object' || data === null) { throw new Error(`Schema should be object not ${typeof data}`); };
     
     /* Compare the schema and data length and keys */
     if (Object.keys(data).length !== Object.keys(schema).length) {

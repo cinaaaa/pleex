@@ -7,11 +7,6 @@ import {getItem} from '../getItem/getItem';
 
 export const removeItem = (collection, remove, success, failure) => {
 
-    /* Check search param */
-    if (typeof remove !== 'object' || remove === null) {
-        throw new Error('remove must be object');
-    };
-
     /* find that object exist */
     getItem(
         collection,

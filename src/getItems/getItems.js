@@ -5,11 +5,6 @@ import {getCollection} from '../_serializer/getCollection';
 
 export const getItems = (collection, search, success, failure) => {
 
-    /* Check search param */
-    if (typeof search !== 'object' || search === null) {
-        throw new Error('search must be object');
-    };
-
     /* Call getCollection function */
     getCollection(
         collection,

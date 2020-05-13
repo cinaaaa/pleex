@@ -1,3 +1,4 @@
+import {typechecker} from './src/_typecheker/typechecker';
 import {insert} from './src/insert/insert';
 import {getAll} from './src/getAll/getAll';
 import {getItem} from './src/getItem/getItem';
@@ -6,46 +7,85 @@ import {removeItem} from './src/removeItem/removeItem';
 import {schema} from './src/schema/schema';
 import {clearCollection} from './src/clearCollection/clearCollection';
 
-export const options = (collection) => {
+const options = (collection) => {
     return {
-        insert: function (data, schema, success, failure) {
-            return insert(collection, data, schema, (callback) => { success(callback) }, (error) => failure(error) );
+        insert: (data, schema, success, failure) => {
+            typechecker(
+                [
+                    [data, Object],
+                    [schema, Object],
+                    [success, Function],
+                    [failure, Function],
+                ],
+                () => {insert(collection, data, schema, (cb) => {success(cb)}, (err) => failure(err));}
+            );
         },
-        getAll: function (success, failure) {
-            return getAll(collection, (data) => success(data), (error) => failure(error));
+        getAll: (success, failure) => {
+            typechecker(
+                [
+                    [success, Function],
+                    [failure, Function],
+                ],
+                () => {getAll(collection, (cb) => success(cb), (err) => failure(err));}
+            );
         },
-        getItem: function (search, success, failure) {
-            return getItem(collection, search, (data) => success(data), (error) => failure(error));
+        getItem: (search, success, failure) => {
+            typechecker(
+                [
+                    [search, Object],
+                    [success, Function],
+                    [failure, Function],
+                ],
+                () => {getItem(collection, search, (cb) => success(cb), (err) => failure(err));}
+            );
         },
-        getItems: function (search, success, failure) {
-            return getItems(collection, search, (data) => success(data), (error) => failure(error));
+        getItems: (search, success, failure) => {
+            typechecker(
+                [
+                    [search, Object],
+                    [success, Function],
+                    [failure, Function],
+                ],
+                () => {getItems(collection, search, (cb) => success(cb), (err) => failure(err));}
+            );
         },
-        removeItem: function (remove, success, failure) {
-            return removeItem(collection, remove, (data) => success(data), (error) => failure(error));
+        removeItem: (remove, success, failure) => {
+            typechecker(
+                [
+                    [remove, Object],
+                    [success, Function],
+                    [failure, Function],
+                ],
+                () => {removeItem(collection, remove, (cb) => success(cb), (err) => failure(err));}
+            );
         },
-        clearCollection: function (success, failure) {
-            return clearCollection(collection, () => success(data), (error) => failure(error));
+        clearCollection: (success, failure) => {
+            typechecker(
+                [
+                    [success, Function],
+                    [failure, Function],
+                ],
+                () => {clearCollection(collection, (cb) => success(cb), (err) => failure(err));}
+            );
         },
-    }
+    };
 };
 
 export const Pleex = {
-    collection: function (collection) { 
-        if (typeof collection === 'string' && collection !== null) {
-            return options(collection);
-        }
-        else {
-            /* When collection name not included or invalid */
-            throw new Error(`Collection name type must be object but now is ${typeof collection}`);
-        };
+    collection: (collection) => {
+        typechecker(
+            [
+                [collection, String]
+            ],
+            () => {options(collection);}
+        );
     },
-    schema: function (schemaObj) {
-        if (typeof schemaObj === 'object' && schemaObj !== null) {
-            return schema(schemaObj);
-        }
-        else {
-            /* Schema is not valid object name not included */
-            throw new Error(`Schema type must be object but now is ${typeof schemaObj}`);
-        };
+    schema: (schemaObj) => {
+        typechecker(
+            [
+                [schemaObj, Object]
+            ],
+            () => {schema(schemaObj);}
+        );
     },
 };
