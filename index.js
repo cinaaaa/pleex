@@ -73,19 +73,21 @@ const options = (collection) => {
 
 export const Pleex = {
     collection: (collection) => {
-        typechecker(
-            [
-                [collection, String]
-            ],
-            () => {options(collection);}
-        );
+        if (typeof collection === 'string' && collection !== null) {
+            return options(collection);
+        }
+        else {
+            /* When collection name not included or invalid */
+            throw new Error(`Collection name type must be object but now is ${typeof collection}`);
+        };
     },
     schema: (schemaObj) => {
-        typechecker(
-            [
-                [schemaObj, Object]
-            ],
-            () => {schema(schemaObj);}
-        );
+        if (typeof schemaObj === 'object' && schemaObj !== null) {
+            return schema(schemaObj);
+        }
+        else {
+            /* Schema is not valid object name not included */
+            throw new Error(`Schema type must be object but now is ${typeof schemaObj}`);
+        };
     },
 };
