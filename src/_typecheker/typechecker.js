@@ -16,7 +16,7 @@ export const typechecker = (inputs, callback) => {
             if (index === inputs.length -1) resolve();
         });
     });
-    // Loop Finshed
+    // Loop Finshed return true
     eachLoop.then(() => {
        callback(true);
     });
