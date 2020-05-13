@@ -14,3 +14,7 @@ CONTRIBUTING.md
 SECURITY.md
 .github/
 .travis.yml
+
+# Tests
+__tests__/
+__tests__
