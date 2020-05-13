@@ -79,3 +79,14 @@ npm test
 
 ### 🙋‍♂️ Contributing
 Find issues or want to add features? see contributing [guide](https://pleex.gitbook.io/docs/contributing/how-to-contribute)
+
+### Current api's:
+- #### Collection
+- #### Schema
+- #### Insert
+- #### removeItem
+- #### removeItems
+- #### getItem
+- #### getItems
+- #### clearCollection
+- #### getAll
