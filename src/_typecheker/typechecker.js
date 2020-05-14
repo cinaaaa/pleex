@@ -1,5 +1,5 @@
 /**
- * typechecker HOC function, do type checking on functions
+ * typechecker function, do type checking on functions
  *
  */
 export const typechecker = (inputs, callback) => {
