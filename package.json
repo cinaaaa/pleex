@@ -26,7 +26,6 @@
   "bugs": {
     "url": "https://github.com/E-RROR/pleex/issues"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "homepage": "https://pleex.gitbook.io/docs",
   "devDependencies": {
     "babel-jest": "^26.0.1",
