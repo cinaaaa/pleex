@@ -6,7 +6,7 @@
 
 <h1 align="center"> Pleex </h1>
 <h3 align="center">
-  ⚙️💣 " Schematic " ➕ " Storage " 💣⚙️ for ⚛️ react native
+  💣 " Schematic " ➕ " Storage " 💣 for ⚛️ react native
 </h3>
 <br />
 <p align="center">
