@@ -36,6 +36,9 @@ yarn add pleex
 ```
 also pleex don't need any extra configuration or installation with gradle or pods
 
+### Youtube tutorial
+[![YOUTUBE](https://img.youtube.com/vi/7bTX-mWmktw/0.jpg)](https://www.youtube.com/watch?v=7bTX-mWmktw)
+
 ### Example Usage
 
 Full example and list of api's can be find in [pleex documents](https://pleex.gitbook.io/docs)
