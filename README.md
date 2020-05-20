@@ -19,7 +19,7 @@
   <img src="https://img.shields.io/npm/v/pleex" />
 </p>
 
-<h3 align="center">Built with ❤</h3>
+<h3 align="center">Built with ❤ Sina Farhadi</h3>
 <br />
 
 ## Get Started
