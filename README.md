@@ -36,7 +36,7 @@ yarn add pleex
 ```
 also pleex don't need any extra configuration or installation with gradle or pods
 
-### Youtube tutorial
+### Want to see example? see youtube tutorial
 [![YOUTUBE](https://img.youtube.com/vi/7bTX-mWmktw/0.jpg)](https://www.youtube.com/watch?v=7bTX-mWmktw)
 
 ### Example Usage
