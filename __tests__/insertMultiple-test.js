@@ -1,7 +1,7 @@
 import {Pleex} from '../index';
 jest.useFakeTimers();
 
-it('Test Get All', done => {
+it('Test Multiple Insert', done => {
 
     // Create collection first
     let my_collection = Pleex.collection('test');
@@ -11,8 +11,11 @@ it('Test Get All', done => {
         test: String
     });
 
-    my_collection.insert(
-        {test: 'test'},
+    my_collection.insertMultiple(
+        [
+            {test: 'test'},
+            {test: 'test'}
+        ],
         my_schema,
         () => {
             done();

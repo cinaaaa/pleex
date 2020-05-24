@@ -72,7 +72,7 @@ const options = (collection) => {
         insertMultiple: (data, schema, success, failure) => {
             typechecker(
                 [
-                    [data, Array],
+                    [data, Object],
                     [schema, Object],
                     [success, Function],
                     [failure, Function],
