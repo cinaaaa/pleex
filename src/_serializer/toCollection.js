@@ -4,8 +4,8 @@
 import {AsyncStorage} from 'react-native';
 import {getCollection} from './getCollection';
 
-export const toCollection = (collection, input, success, failure, clear) => {
-    
+export const toCollection = (collection, input, success, failure, clear, rmbracket) => {
+
     getCollection(collection, async (data) => {
         try {
 
@@ -16,8 +16,16 @@ export const toCollection = (collection, input, success, failure, clear) => {
                 success(true);
             }
             else {
-                await AsyncStorage.setItem(collection, JSON.stringify([...data, input]));
-                success(true);
+                if (rmbracket) {
+                    let cleared_data = JSON.stringify(input).replace("[","").replace("]","");
+
+                    await AsyncStorage.setItem(collection, JSON.stringify([...data, cleared_data]));
+                    success(true);
+                }
+                else {
+                    await AsyncStorage.setItem(collection, JSON.stringify([...data, input]));
+                    success(true);
+                };
             };
 
         } catch (error) {

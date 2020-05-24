@@ -1,5 +1,6 @@
 import {typechecker} from './src/_typecheker/typechecker';
 import {insert} from './src/insert/insert';
+import {insertMultiple} from './src/insertMultiple/insertMultiple';
 import {getAll} from './src/getAll/getAll';
 import {getItem} from './src/getItem/getItem';
 import {getItems} from './src/getItems/getItems';
@@ -66,6 +67,17 @@ const options = (collection) => {
                     [failure, Function],
                 ],
                 () => {clearCollection(collection, (cb) => success(cb), (err) => failure(err));}
+            );
+        },
+        insertMultiple: (data, schema, success, failure) => {
+            typechecker(
+                [
+                    [data, Array],
+                    [schema, Object],
+                    [success, Function],
+                    [failure, Function],
+                ],
+                () => {insertMultiple(collection, data, schema, (cb) => success(cb), (err) => failure(err));}
             );
         },
     };

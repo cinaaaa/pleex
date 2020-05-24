@@ -4,15 +4,14 @@
 import {toCollection} from '../_serializer/toCollection';
 
 export const insert = async (collection, data, schema, success, failure) => {
-    
+
     /* Compare the schema and data length and keys */
     if (Object.keys(data).length !== Object.keys(schema).length) {
         throw new Error('Data is not same as schema');
     };
-    Object.keys(data).sort().every(function(value, index) { 
+    Object.keys(data).sort().every(function(value, index) {
         if (value !== Object.keys(schema).sort()[index]) { throw new Error('Data included is not same as schema'); };
     });
-    
 
     /* Check types of values compare to schema */
     Object.keys(data).forEach((key) => {
@@ -25,5 +24,5 @@ export const insert = async (collection, data, schema, success, failure) => {
     /* Now data is clean and same to shape */
     /* Save data in storage */
     toCollection(collection, data, (/*Success*/) => success(true), (error) => failure(error) );
-    
+
 };
