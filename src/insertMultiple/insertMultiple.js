@@ -21,8 +21,8 @@ export const insertMultiple = async (collection, data, schema, success, failure)
     data.forEach((item) => {
       Object.keys(item).forEach((key) => {
           // Check for valid type
-          if (schema[key] !== typeof data[key]) {
-              throw new Error(`Type of ${key} should be ${schema[key]} not ${typeof data[key]}`);
+          if (schema[key] !== typeof item[key]) {
+              throw new Error(`Type of ${key} should be ${schema[key]} not ${typeof item[key]}`);
           };
       });
     });
