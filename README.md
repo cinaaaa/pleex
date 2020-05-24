@@ -93,3 +93,4 @@ Find issues or want to add features? see contributing [guide](https://pleex.gitb
 - #### getItems
 - #### clearCollection
 - #### getAll
+- #### Multiple insert
